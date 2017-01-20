@@ -8,9 +8,6 @@ namespace Player
         private Rigidbody _rigidbody;
 
         public string AxisPrefix;
-        public Vector3 InputVector;
-        public bool Fire1;
-        public bool Fire2;
 
         private void Start()
         {
@@ -20,11 +17,23 @@ namespace Player
 
         private void Update()
         {
-            InputVector = new Vector3(
-                Input.GetAxis(AxisPrefix + "-Horizontal"), 0.0f, Input.GetAxis(AxisPrefix + "-Vertical"));
-
-            if (Input.GetButtonDown(AxisPrefix + "-Fire1")) { Debug.Log(AxisPrefix + "Fire1"); }
-            if (Input.GetButtonDown(AxisPrefix + "-Fire2")) { Debug.Log(AxisPrefix + "Fire2"); }
+            HandleRotation();
+            HandleThrust();
         }
+
+        private void HandleRotation()
+        {
+
+        }
+
+        private void HandleThrust()
+        {
+            Vector3 planarVector = new Vector3(_transform.forward.x, 0.0f, _transform.forward.z);
+            Vector3 delta = planarVector.normalized * Input.GetAxis(AxisPrefix + "-Vertical") * Maximum_Movement_Speed;
+
+            _rigidbody.velocity = new Vector3(delta.x, _rigidbody.velocity.y, delta.z);
+        }
+
+        private const float Maximum_Movement_Speed = 5.0f;
     }
 }
