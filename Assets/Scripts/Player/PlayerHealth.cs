@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using GameControl;
+using RadiationSources;
 
 namespace Player
 {
@@ -7,16 +7,16 @@ namespace Player
     {
         public float CurrentHealth;
 
-        private BackgroundRadiationTracker _backgroundRadiationTracker;
+        private BackgroundRadiationGenerator _backgroundRadiationGenerator;
 
         private void Start()
         {
-            _backgroundRadiationTracker = FindObjectOfType<BackgroundRadiationTracker>();
+            _backgroundRadiationGenerator = FindObjectOfType<BackgroundRadiationGenerator>();
         }
 
         public void Update()
         {
-            CurrentHealth = Mathf.Max(0.0f, CurrentHealth - _backgroundRadiationTracker.BackgroundRadiationLevel);
+            CurrentHealth = Mathf.Max(0.0f, CurrentHealth - _backgroundRadiationGenerator.BackgroundRadiationLevel);
         }
     }
 }
