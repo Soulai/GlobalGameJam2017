@@ -25,14 +25,17 @@ public class PatrolEnemyState : AEnemyState
 
 	public override void OnStateEnter(EnemyStates previousState)
 	{
-		base.OnStateEnter(previousState);
 		MoveToRandomPatrolPoint();
 	}
 
 	public override void OnStateExit()
 	{
-		base.OnStateExit();
 		StopWaitAndChangeTargetCoroutine();
+	}
+
+	public override void OnSoundProducerInterestsUpdated(SoundProducerInterest maxSoundProducerInterest)
+	{
+		TryChaseSound(maxSoundProducerInterest);
 	}
 
 	public override void UpdateState()
@@ -58,19 +61,6 @@ public class PatrolEnemyState : AEnemyState
 		navMeshAgent.SetDestination(currentPatrolPointTarget.position);
 	}
 
-	protected override void OnSoundProducerAdded(ASoundProducer soundProducer)
-	{
-		base.OnSoundProducerAdded(soundProducer);
-		TryChaseSound(soundProducer);
-	}
-
-	protected override void OnVolumeModified(ASoundProducer soundProducer)
-	{
-		base.OnVolumeModified(soundProducer);
-		TryChaseSound(soundProducer);
-
-	}
-
 	private void StopWaitAndChangeTargetCoroutine()
 	{
 		if (waitAndChangeTargetCoroutine != null)
@@ -80,10 +70,9 @@ public class PatrolEnemyState : AEnemyState
 		}
 	}
 
-	private void TryChaseSound(ASoundProducer soundProducer)
+	private void TryChaseSound(SoundProducerInterest soundProducerInterest)
 	{
-		float volume = soundProducer.GetVolume(cachedTransform.position);
-		if (volume > balanceData.triggerMinVolume)
+		if (soundProducerInterest.Interest > balanceData.chaseSoundMinInterestRequired)
 		{
 			enemyBehaviour.ChangeState(EnemyStates.ChaseSound);
 		}
