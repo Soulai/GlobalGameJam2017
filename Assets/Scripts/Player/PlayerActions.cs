@@ -2,12 +2,13 @@
 
 namespace Player
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerActions : MonoBehaviour
     {
         private Transform _transform;
         private Rigidbody _rigidbody;
         private Animator _animator;
-        private bool _swingInProgress;
+
+        public bool PunchInProgress { private get; set; }
 
         public string AxisPrefix;
 
@@ -17,7 +18,7 @@ namespace Player
             _rigidbody = GetComponent<Rigidbody>();
             _animator = GetComponentInChildren<Animator>();
 
-            _swingInProgress = false;
+            PunchInProgress = false;
         }
 
         private void Update()
@@ -25,9 +26,9 @@ namespace Player
             HandleRotation();
             HandleThrust();
 
-            if ((Input.GetButtonDown(AxisPrefix + "-Fire1")) && (!_swingInProgress))
+            if ((Input.GetButtonDown(AxisPrefix + "-Fire1")) && (!PunchInProgress))
             {
-                _swingInProgress = true;
+                Punch();
             }
         }
 
@@ -45,7 +46,7 @@ namespace Player
         {
             float stickValue = Input.GetAxis(AxisPrefix + "-Vertical");
 
-            if ((Mathf.Abs(stickValue) < Movement_Threshold) || (_swingInProgress))
+            if ((Mathf.Abs(stickValue) < Movement_Threshold) || (PunchInProgress))
             {
                 stickValue = 0.0f;
             }
@@ -60,6 +61,15 @@ namespace Player
             _animator.SetBool("Walking Backward", delta < -Movement_Threshold);
 
             _rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
+        }
+
+        private void Punch()
+        {
+            PunchInProgress = true;
+            _animator.SetBool("Walking Forward", false);
+            _animator.SetBool("Running", false);
+            _animator.SetBool("Walking Backward", false);
+            _animator.SetTrigger("Attacking");
         }
 
         private const float Rotation_Threshold = 0.25f;
