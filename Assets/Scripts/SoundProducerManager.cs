@@ -15,6 +15,11 @@ public class SoundProducerManager : MonoBehaviour
 		SoundProducerAddedEvent.Fire(soundProducer);
 	}
 
+	public IEnumerable<ASoundProducer> GetSoundProducers()
+	{
+		return soundProducers;
+	}
+
 	public void RemoveSoundProducer(ASoundProducer soundProducer)
 	{
 		soundProducers.Remove(soundProducer);
