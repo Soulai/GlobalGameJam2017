@@ -61,11 +61,13 @@ public class PatrolEnemyState : AEnemyState
 	protected override void OnSoundProducerAdded(ASoundProducer soundProducer)
 	{
 		base.OnSoundProducerAdded(soundProducer);
-		float volume = soundProducer.GetVolume(cachedTransform.position);
-		if (volume > balanceData.triggerMinVolume)
-		{
-			enemyBehaviour.ChangeState(EnemyStates.ChaseSound);
-		}
+		TryChaseSound(soundProducer);
+	}
+
+	protected override void OnVolumeModified(ASoundProducer soundProducer)
+	{
+		base.OnVolumeModified(soundProducer);
+		TryChaseSound(soundProducer);
 
 	}
 
@@ -75,6 +77,15 @@ public class PatrolEnemyState : AEnemyState
 		{
 			enemyBehaviour.StopCoroutine(waitAndChangeTargetCoroutine);
 			waitAndChangeTargetCoroutine = null;
+		}
+	}
+
+	private void TryChaseSound(ASoundProducer soundProducer)
+	{
+		float volume = soundProducer.GetVolume(cachedTransform.position);
+		if (volume > balanceData.triggerMinVolume)
+		{
+			enemyBehaviour.ChangeState(EnemyStates.ChaseSound);
 		}
 	}
 
