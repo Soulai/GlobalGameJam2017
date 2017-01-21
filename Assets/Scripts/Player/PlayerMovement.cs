@@ -6,6 +6,7 @@ namespace Player
     {
         private Transform _transform;
         private Rigidbody _rigidbody;
+        private Animator _animator;
 
         public string AxisPrefix;
 
@@ -13,6 +14,7 @@ namespace Player
         {
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody>();
+            _animator = GetComponentInChildren<Animator>();
         }
 
         private void Update()
@@ -32,14 +34,19 @@ namespace Player
 
         private void HandleThrust()
         {
+            float stickValue = Input.GetAxis(AxisPrefix + "-Vertical");
+            float delta = Mathf.Abs(stickValue) > Movement_Threshold ? stickValue : 0.0f;
             Vector3 planarVector = new Vector3(_transform.forward.x, 0.0f, _transform.forward.z);
-            Vector3 delta = planarVector.normalized * Input.GetAxis(AxisPrefix + "-Vertical") * Maximum_Movement_Speed;
+            Vector3 movementVector = planarVector.normalized * delta * Maximum_Movement_Speed;
 
-            _rigidbody.velocity = new Vector3(delta.x, _rigidbody.velocity.y, delta.z);
+            _animator.SetBool("IsMoving", delta > Movement_Threshold);
+
+            _rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
         }
 
         private const float Rotation_Threshold = 0.25f;
         private const float Maximum_Rotation_Speed = 2.0f;
+        private const float Movement_Threshold = 0.1f;
         private const float Maximum_Movement_Speed = 5.0f;
     }
 }
