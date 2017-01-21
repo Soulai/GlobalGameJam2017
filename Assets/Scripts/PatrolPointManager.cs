@@ -12,8 +12,13 @@ public class PatrolPointManager : MonoBehaviour
 		patrolPoints.AddRange(patrolPointsGO.Select(patrolPointGO => patrolPointGO.transform));
 	}
 
-	public Transform GetRandomPatrolPoint()
+	public Transform GetRandomPatrolPoint(Transform previousPatrolPoint)
 	{
-		return patrolPoints[Random.Range(0, patrolPoints.Count - 1)];
+		Transform randomPatrolPoint = previousPatrolPoint;
+		while (randomPatrolPoint == previousPatrolPoint)
+		{
+			randomPatrolPoint = patrolPoints[Random.Range(0, patrolPoints.Count)];
+		}
+		return randomPatrolPoint;
 	}
 }

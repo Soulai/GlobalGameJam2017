@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 	{
 		get
 		{
-			return PatrolPointManager;
+			return patrolPointManager;
 		}
 	}
 

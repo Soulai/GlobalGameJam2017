@@ -1,37 +1,44 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemyBehaviour : MonoBehaviour 
 {
+	[SerializeField]
+	private PatrolEnemyStateData patrolStateData;
 
+	private AEnemyState currentState;
+	private List<AEnemyState> states = new List<AEnemyState>();
 
 	void Start()
 	{
-		SoundProducerManager soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
-		soundProducerManager.SoundProducerAddedEvent += OnSoundProducerAdded;
-		soundProducerManager.SoundProducerRemovedEvent += OnSoundProducerRemoved;
+		states.Add(new PatrolEnemyState(this, patrolStateData));
+
+		ChangeState(EnemyStates.Patrol);
 	}
 
 	void OnDestroy()
 	{
-		SoundProducerManager soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
-		if (soundProducerManager != null)
+		currentState.OnStateExit();
+	}
+
+	void Update()
+	{
+		currentState.UpdateState();
+	}
+
+	public void ChangeState(EnemyStates newState)
+	{
+		EnemyStates previousState;
+		if (currentState != null)
 		{
-			soundProducerManager.SoundProducerAddedEvent += OnSoundProducerAdded;
-			soundProducerManager.SoundProducerRemovedEvent += OnSoundProducerRemoved;
+			currentState.OnStateExit();
+			previousState = currentState.stateName;
+		} 
+		else
+		{
+			previousState = EnemyStates.Undefined;
 		}
-	}
-
-	private void OnSoundProducerAdded(ASoundProducer soundProducer)
-	{
-		soundProducer.VolumeModifiedEvent += OnVolumeModified;
-	}
-
-	private void OnSoundProducerRemoved(ASoundProducer soundProducer)
-	{
-		soundProducer.VolumeModifiedEvent -= OnVolumeModified;
-	}
-
-	private void OnVolumeModified(float volume)
-	{
+		currentState = states.Find(state => state.stateName == newState);
+		currentState.OnStateEnter(previousState);
 	}
 }
