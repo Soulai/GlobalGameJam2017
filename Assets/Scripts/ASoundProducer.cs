@@ -44,9 +44,12 @@ public abstract class ASoundProducer : MonoBehaviour
 		}
 	}
 
-	public abstract Vector3 SourcePosition
+	public virtual Vector3 SourcePosition
 	{
-		get;
+		get
+		{
+			return cachedTransform.position;
+		}
 	}
 
 	protected virtual void Start()
@@ -55,5 +58,8 @@ public abstract class ASoundProducer : MonoBehaviour
 		soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
 	}
 
-	public abstract float GetVolume(Vector3 fromPosition);
+	public virtual float GetVolume(Vector3 fromPosition)
+	{
+		return SourceVolume / (fromPosition - cachedTransform.position).sqrMagnitude;
+	}
 }
