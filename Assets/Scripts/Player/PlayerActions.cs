@@ -67,12 +67,9 @@ namespace Player
             _transform.localRotation = Quaternion.Euler(_transform.eulerAngles.x, updatedY, _transform.eulerAngles.z);
         }
 
-        public float stickValue;
-
         private void HandleThrust()
         {
-            //float
-                stickValue = Input.GetAxis(AxisPrefix + "-Vertical");
+            float stickValue = Input.GetAxis(AxisPrefix + "-Vertical");
 
             if ((Mathf.Abs(stickValue) < movementThreshold) || (PunchInProgress))
             {
