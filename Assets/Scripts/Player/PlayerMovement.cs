@@ -50,10 +50,14 @@ namespace Player
                 stickValue = 0.0f;
             }
 
-            Vector3 planarVector = new Vector3(_transform.forward.x, 0.0f, _transform.forward.z);
-            Vector3 movementVector = planarVector.normalized * stickValue * Maximum_Movement_Speed;
+            float delta = Mathf.Clamp(stickValue * Maximum_Running_Speed, -Maximum_Walking_Speed, Maximum_Running_Speed);
 
-            _animator.SetBool("IsMoving", stickValue > Movement_Threshold);
+            Vector3 planarVector = new Vector3(_transform.forward.x, 0.0f, _transform.forward.z);
+            Vector3 movementVector = planarVector.normalized * delta;
+
+            _animator.SetBool("Walking Forward", delta > Movement_Threshold);
+            _animator.SetBool("Running", delta > Maximum_Walking_Speed);
+            _animator.SetBool("Walking Backward", delta < -Movement_Threshold);
 
             _rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
         }
@@ -61,6 +65,7 @@ namespace Player
         private const float Rotation_Threshold = 0.25f;
         private const float Maximum_Rotation_Speed = 2.0f;
         private const float Movement_Threshold = 0.1f;
-        private const float Maximum_Movement_Speed = 5.0f;
+        private const float Maximum_Walking_Speed = 2.0f;
+        private const float Maximum_Running_Speed = 5.0f;
     }
 }
