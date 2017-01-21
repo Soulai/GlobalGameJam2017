@@ -33,7 +33,7 @@ namespace Player
 
         private void ApplyDamageFromBackgroundRadiation()
         {
-            CurrentHealth -= _backgroundRadiationGenerator.BackgroundRadiationLevel;
+            //CurrentHealth -= _backgroundRadiationGenerator.BackgroundRadiationLevel;
         }
 
         private void ApplyDamageFromNearbyRadiationGenerators()

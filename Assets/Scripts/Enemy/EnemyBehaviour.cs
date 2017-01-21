@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections;
@@ -22,6 +23,9 @@ public class EnemyBehaviour : MonoBehaviour
 	private SoundProducerManager soundProducerManager;
 	private List<AEnemyState> states = new List<AEnemyState>();
 
+    private Animator _animator;
+    private NavMeshAgent _navMeshAgent;
+
 	public ReadOnlyCollection<SoundProducerInterest> SoundProducerInterests
 	{
 		get
@@ -36,7 +40,10 @@ public class EnemyBehaviour : MonoBehaviour
 		soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
 		soundProducerManager.SoundProducerAddedEvent += OnSoundProducerAdded;
 
-		states.Add(new PatrolEnemyState(this, patrolStateData));
+        _animator = GetComponentInChildren<Animator>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+
+        states.Add(new PatrolEnemyState(this, patrolStateData));
 		states.Add(new ChaseSoundEnemyState(this, chaseSoundStateData));
 
 		ChangeState(EnemyStates.Patrol);
@@ -56,6 +63,7 @@ public class EnemyBehaviour : MonoBehaviour
 	void Update()
 	{
 		currentState.UpdateState();
+        _animator.SetFloat("Velocity", _navMeshAgent.velocity.magnitude / _navMeshAgent.speed);
 	}
 
 	public void ChangeState(EnemyStates newState)
