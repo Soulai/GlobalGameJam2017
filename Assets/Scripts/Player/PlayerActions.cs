@@ -30,7 +30,7 @@ namespace Player
 			}
 		}
 
-        public bool PunchInProgress { private get; set; }
+        public bool PunchInProgress;// { private get; set; }
 
         public string AxisPrefix;
 
