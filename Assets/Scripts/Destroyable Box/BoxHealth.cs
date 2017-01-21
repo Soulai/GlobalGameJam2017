@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using System;
 
 namespace DestroyableBox
 {
     public class BoxHealth : MonoBehaviour
     {
+		public event Action<BoxHealth> BoxDestroyedEvent;
+
         public int HitsToDestroy;
 
         private void OnTriggerEnter(Collider collider)
@@ -21,7 +24,12 @@ namespace DestroyableBox
         private void HandleDestruction()
         {
             // Just switch it off for now...
-            gameObject.SetActive(false);
+			Renderer[] renderers = GetComponentsInChildren<Renderer>();
+			foreach (Renderer renderer in renderers)
+			{
+				renderer.enabled = false;
+			}
+			BoxDestroyedEvent.Fire(this);
         }
     }
 }

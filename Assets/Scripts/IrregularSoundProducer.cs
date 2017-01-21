@@ -26,11 +26,6 @@ public class IrregularSoundProducer : ASoundProducer
 		StartCoroutine(ProduceSound());
 	}
 
-	public override float GetVolume(Vector3 fromPosition)
-	{
-		return SourceVolume / (fromPosition - cachedTransform.position).sqrMagnitude;
-	}
-
 	private IEnumerator ProduceSound()
 	{
 		Renderer renderer = GetComponent<Renderer>();
