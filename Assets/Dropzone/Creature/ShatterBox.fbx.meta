@@ -1,0 +1,579 @@
+fileFormatVersion: 2
+guid: 240e79722dbae22439ef172c1b6f41e8
+timeCreated: 1484991270
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: absControl
+    100002: back1
+    100004: back2
+    100006: back3
+    100008: back4
+    100010: backControl
+    100012: basehead
+    100014: bodymesh
+    100016: chestControl
+    100018: clavicleGRP
+    100020: clusterAbs
+    100022: clusterChest
+    100024: clusterHip
+    100026: clusterNeck
+    100028: controlCurversGRP
+    100030: curve1
+    100032: eye1
+    100034: eye2
+    100036: EyeControl
+    100038: EyeControlGRP
+    100040: Eyes
+    100042: globalControl
+    100044: group1
+    100046: group2
+    100048: group3
+    100050: group4
+    100052: hip
+    100054: hipsControl
+    100056: hipSwayControl
+    100058: ikGRP
+    100060: ikHandle1
+    100062: ikHandle2
+    100064: ikHandle_leftClavicle
+    100066: ikHandle_leftLeg
+    100068: ikHandle_leftLeg1
+    100070: ikHandle_leftWrist
+    100072: ikHandle_rightClavicle
+    100074: ikHandle_rightLeg
+    100076: ikHandle_rightWrist
+    100078: ikHandle_SC_leftFoot
+    100080: ikHandle_SC_leftFoot1
+    100082: ikHandle_SC_leftToe
+    100084: ikHandle_SC_leftToe1
+    100086: ikHandle_SC_rightFoot
+    100088: ikHandle_SC_rightToe
+    100090: Jaw
+    100092: jawControl
+    100094: joint1
+    100096: joint1 1
+    100098: joint10
+    100100: joint10 1
+    100102: joint11
+    100104: joint11 1
+    100106: joint12
+    100108: joint12 1
+    100110: joint13
+    100112: joint13 1
+    100114: joint14
+    100116: joint14 1
+    100118: joint15
+    100120: joint15 1
+    100122: joint16
+    100124: joint16 1
+    100126: joint2
+    100128: joint2 1
+    100130: joint3
+    100132: joint3 1
+    100134: joint4
+    100136: joint4 1
+    100138: joint5
+    100140: joint5 1
+    100142: joint6
+    100144: joint6 1
+    100146: joint7
+    100148: joint7 1
+    100150: joint8
+    100152: joint8 1
+    100154: joint9
+    100156: joint9 1
+    100158: leftAnkle
+    100160: leftArmControl
+    100162: leftBlink
+    100164: leftClavicle
+    100166: leftClavicleControl
+    100168: leftElbow
+    100170: leftElbowControl
+    100172: leftEyeBot
+    100174: leftEyebrow
+    100176: leftEyebrowControl
+    100178: leftEyeControl
+    100180: leftEyeTop
+    100182: leftFoot
+    100184: leftFootControl
+    100186: leftForearm
+    100188: leftHip
+    100190: leftKnee
+    100192: leftKneeControl
+    100194: leftKneeControlGRP
+    100196: leftNails
+    100198: leftRLAnkle
+    100200: leftRLBase
+    100202: leftRLFoot
+    100204: leftRLToe
+    100206: leftShoulder
+    100208: leftToe
+    100210: leftWrist
+    100212: lowerGums
+    100214: Mouth
+    100216: neck
+    100218: neckControl
+    100220: pCone1
+    100222: pCone1 1
+    100224: pCone10
+    100226: pCone10 1
+    100228: pCone11
+    100230: pCone11 1
+    100232: pCone12
+    100234: pCone12 1
+    100236: pCone13
+    100238: pCone13 1
+    100240: pCone14
+    100242: pCone14 1
+    100244: pCone15
+    100246: pCone15 1
+    100248: pCone16
+    100250: pCone16 1
+    100252: pCone17
+    100254: pCone17 1
+    100256: pCone18
+    100258: pCone18 1
+    100260: pCone2
+    100262: pCone2 1
+    100264: pCone3
+    100266: pCone3 1
+    100268: pCone4
+    100270: pCone4 1
+    100272: pCone5
+    100274: pCone5 1
+    100276: pCone6
+    100278: pCone6 1
+    100280: pCone7
+    100282: pCone7 1
+    100284: pCone8
+    100286: pCone8 1
+    100288: pCone9
+    100290: pCone9 1
+    100292: rightAnkle
+    100294: rightArmControl
+    100296: rightBlink
+    100298: rightClavicle
+    100300: rightClavicleControl
+    100302: rightElbow
+    100304: rightElbowControl
+    100306: rightEyeBot
+    100308: rightEyebrow
+    100310: rightEyebrowControl
+    100312: rightEyeControl
+    100314: rightEyeTop
+    100316: rightFoot
+    100318: rightFootControl
+    100320: rightForearm
+    100322: rightHip
+    100324: rightKnee
+    100326: rightKneeControl
+    100328: rightKneeControlGRP
+    100330: rightNails
+    100332: rightRLAnkle
+    100334: rightRLBase
+    100336: rightRLFoot
+    100338: rightRLToe
+    100340: rightShoulder
+    100342: rightToe
+    100344: rightWrist
+    100346: root
+    100348: rootGRP
+    100350: //RootNode
+    100352: skull
+    100354: tongue
+    100356: tongue1
+    100358: tongue2
+    100360: tongue3
+    100362: tongue4
+    100364: tongueControl1
+    100366: tongueControl2
+    100368: tongueControl3
+    100370: tongueControlGRP
+    100372: upperBodyControl
+    100374: UpperControlsGRP
+    100376: upperGums
+    400000: absControl
+    400002: back1
+    400004: back2
+    400006: back3
+    400008: back4
+    400010: backControl
+    400012: basehead
+    400014: bodymesh
+    400016: chestControl
+    400018: clavicleGRP
+    400020: clusterAbs
+    400022: clusterChest
+    400024: clusterHip
+    400026: clusterNeck
+    400028: controlCurversGRP
+    400030: curve1
+    400032: eye1
+    400034: eye2
+    400036: EyeControl
+    400038: EyeControlGRP
+    400040: Eyes
+    400042: globalControl
+    400044: group1
+    400046: group2
+    400048: group3
+    400050: group4
+    400052: hip
+    400054: hipsControl
+    400056: hipSwayControl
+    400058: ikGRP
+    400060: ikHandle1
+    400062: ikHandle2
+    400064: ikHandle_leftClavicle
+    400066: ikHandle_leftLeg
+    400068: ikHandle_leftLeg1
+    400070: ikHandle_leftWrist
+    400072: ikHandle_rightClavicle
+    400074: ikHandle_rightLeg
+    400076: ikHandle_rightWrist
+    400078: ikHandle_SC_leftFoot
+    400080: ikHandle_SC_leftFoot1
+    400082: ikHandle_SC_leftToe
+    400084: ikHandle_SC_leftToe1
+    400086: ikHandle_SC_rightFoot
+    400088: ikHandle_SC_rightToe
+    400090: Jaw
+    400092: jawControl
+    400094: joint1
+    400096: joint1 1
+    400098: joint10
+    400100: joint10 1
+    400102: joint11
+    400104: joint11 1
+    400106: joint12
+    400108: joint12 1
+    400110: joint13
+    400112: joint13 1
+    400114: joint14
+    400116: joint14 1
+    400118: joint15
+    400120: joint15 1
+    400122: joint16
+    400124: joint16 1
+    400126: joint2
+    400128: joint2 1
+    400130: joint3
+    400132: joint3 1
+    400134: joint4
+    400136: joint4 1
+    400138: joint5
+    400140: joint5 1
+    400142: joint6
+    400144: joint6 1
+    400146: joint7
+    400148: joint7 1
+    400150: joint8
+    400152: joint8 1
+    400154: joint9
+    400156: joint9 1
+    400158: leftAnkle
+    400160: leftArmControl
+    400162: leftBlink
+    400164: leftClavicle
+    400166: leftClavicleControl
+    400168: leftElbow
+    400170: leftElbowControl
+    400172: leftEyeBot
+    400174: leftEyebrow
+    400176: leftEyebrowControl
+    400178: leftEyeControl
+    400180: leftEyeTop
+    400182: leftFoot
+    400184: leftFootControl
+    400186: leftForearm
+    400188: leftHip
+    400190: leftKnee
+    400192: leftKneeControl
+    400194: leftKneeControlGRP
+    400196: leftNails
+    400198: leftRLAnkle
+    400200: leftRLBase
+    400202: leftRLFoot
+    400204: leftRLToe
+    400206: leftShoulder
+    400208: leftToe
+    400210: leftWrist
+    400212: lowerGums
+    400214: Mouth
+    400216: neck
+    400218: neckControl
+    400220: pCone1
+    400222: pCone1 1
+    400224: pCone10
+    400226: pCone10 1
+    400228: pCone11
+    400230: pCone11 1
+    400232: pCone12
+    400234: pCone12 1
+    400236: pCone13
+    400238: pCone13 1
+    400240: pCone14
+    400242: pCone14 1
+    400244: pCone15
+    400246: pCone15 1
+    400248: pCone16
+    400250: pCone16 1
+    400252: pCone17
+    400254: pCone17 1
+    400256: pCone18
+    400258: pCone18 1
+    400260: pCone2
+    400262: pCone2 1
+    400264: pCone3
+    400266: pCone3 1
+    400268: pCone4
+    400270: pCone4 1
+    400272: pCone5
+    400274: pCone5 1
+    400276: pCone6
+    400278: pCone6 1
+    400280: pCone7
+    400282: pCone7 1
+    400284: pCone8
+    400286: pCone8 1
+    400288: pCone9
+    400290: pCone9 1
+    400292: rightAnkle
+    400294: rightArmControl
+    400296: rightBlink
+    400298: rightClavicle
+    400300: rightClavicleControl
+    400302: rightElbow
+    400304: rightElbowControl
+    400306: rightEyeBot
+    400308: rightEyebrow
+    400310: rightEyebrowControl
+    400312: rightEyeControl
+    400314: rightEyeTop
+    400316: rightFoot
+    400318: rightFootControl
+    400320: rightForearm
+    400322: rightHip
+    400324: rightKnee
+    400326: rightKneeControl
+    400328: rightKneeControlGRP
+    400330: rightNails
+    400332: rightRLAnkle
+    400334: rightRLBase
+    400336: rightRLFoot
+    400338: rightRLToe
+    400340: rightShoulder
+    400342: rightToe
+    400344: rightWrist
+    400346: root
+    400348: rootGRP
+    400350: //RootNode
+    400352: skull
+    400354: tongue
+    400356: tongue1
+    400358: tongue2
+    400360: tongue3
+    400362: tongue4
+    400364: tongueControl1
+    400366: tongueControl2
+    400368: tongueControl3
+    400370: tongueControlGRP
+    400372: upperBodyControl
+    400374: UpperControlsGRP
+    400376: upperGums
+    2300000: eye1
+    2300002: eye2
+    2300004: lowerGums
+    2300006: pCone1
+    2300008: pCone1 1
+    2300010: pCone10
+    2300012: pCone10 1
+    2300014: pCone11
+    2300016: pCone11 1
+    2300018: pCone12
+    2300020: pCone12 1
+    2300022: pCone13
+    2300024: pCone13 1
+    2300026: pCone14
+    2300028: pCone14 1
+    2300030: pCone15
+    2300032: pCone15 1
+    2300034: pCone16
+    2300036: pCone16 1
+    2300038: pCone17
+    2300040: pCone17 1
+    2300042: pCone18
+    2300044: pCone18 1
+    2300046: pCone2
+    2300048: pCone2 1
+    2300050: pCone3
+    2300052: pCone3 1
+    2300054: pCone4
+    2300056: pCone4 1
+    2300058: pCone5
+    2300060: pCone5 1
+    2300062: pCone6
+    2300064: pCone6 1
+    2300066: pCone7
+    2300068: pCone7 1
+    2300070: pCone8
+    2300072: pCone8 1
+    2300074: pCone9
+    2300076: pCone9 1
+    2300078: upperGums
+    3300000: eye1
+    3300002: eye2
+    3300004: lowerGums
+    3300006: pCone1
+    3300008: pCone1 1
+    3300010: pCone10
+    3300012: pCone10 1
+    3300014: pCone11
+    3300016: pCone11 1
+    3300018: pCone12
+    3300020: pCone12 1
+    3300022: pCone13
+    3300024: pCone13 1
+    3300026: pCone14
+    3300028: pCone14 1
+    3300030: pCone15
+    3300032: pCone15 1
+    3300034: pCone16
+    3300036: pCone16 1
+    3300038: pCone17
+    3300040: pCone17 1
+    3300042: pCone18
+    3300044: pCone18 1
+    3300046: pCone2
+    3300048: pCone2 1
+    3300050: pCone3
+    3300052: pCone3 1
+    3300054: pCone4
+    3300056: pCone4 1
+    3300058: pCone5
+    3300060: pCone5 1
+    3300062: pCone6
+    3300064: pCone6 1
+    3300066: pCone7
+    3300068: pCone7 1
+    3300070: pCone8
+    3300072: pCone8 1
+    3300074: pCone9
+    3300076: pCone9 1
+    3300078: upperGums
+    4300000: tongue
+    4300002: lowerGums
+    4300004: pCone9
+    4300006: pCone8
+    4300008: pCone7
+    4300010: pCone6
+    4300012: pCone1
+    4300014: pCone2
+    4300016: pCone3
+    4300018: pCone4
+    4300020: pCone5
+    4300022: pCone10
+    4300024: pCone11
+    4300026: pCone12
+    4300028: pCone13
+    4300030: pCone14
+    4300032: pCone15
+    4300034: pCone16
+    4300036: pCone17
+    4300038: pCone18
+    4300040: upperGums
+    4300042: pCone9
+    4300044: pCone8
+    4300046: pCone7
+    4300048: pCone6
+    4300050: pCone1
+    4300052: pCone2
+    4300054: pCone3
+    4300056: pCone4
+    4300058: pCone5
+    4300060: pCone10
+    4300062: pCone11
+    4300064: pCone12
+    4300066: pCone13
+    4300068: pCone14
+    4300070: pCone15
+    4300072: pCone16
+    4300074: pCone17
+    4300076: pCone18
+    4300078: eye1
+    4300080: eye2
+    4300082: bodymesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bodymesh
+    13700002: tongue
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 12
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
