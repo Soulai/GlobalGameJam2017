@@ -1,5 +1,6 @@
 ﻿public enum EnemyStates
 {
 	Undefined,
-	Patrol
+	Patrol,
+	ChaseSound
 }

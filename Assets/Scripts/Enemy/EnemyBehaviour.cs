@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class EnemyBehaviour : MonoBehaviour 
 {
 	[SerializeField]
+	private ChaseSoundEnemyStateData chaseSoundStateData;
+	[SerializeField]
 	private PatrolEnemyStateData patrolStateData;
 
 	private AEnemyState currentState;
@@ -12,6 +14,7 @@ public class EnemyBehaviour : MonoBehaviour
 	void Start()
 	{
 		states.Add(new PatrolEnemyState(this, patrolStateData));
+		states.Add(new ChaseSoundEnemyState(this, chaseSoundStateData));
 
 		ChangeState(EnemyStates.Patrol);
 	}

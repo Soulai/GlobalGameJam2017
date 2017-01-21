@@ -1,10 +1,13 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 public abstract class AEnemyState
 {
 	protected EnemyBehaviour enemyBehaviour;
 	protected Transform cachedTransform;
+	protected NavMeshAgent navMeshAgent;
+	protected SoundProducerManager soundProducerManager;
 
 	public abstract EnemyStates stateName
 	{
@@ -15,18 +18,22 @@ public abstract class AEnemyState
 	{
 		this.enemyBehaviour = enemyBehaviour;
 		cachedTransform = enemyBehaviour.transform;
+		navMeshAgent = enemyBehaviour.GetComponent<NavMeshAgent>();
+		soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
 	}
 
 	public virtual void OnStateEnter(EnemyStates previousState)
 	{
-		SoundProducerManager soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
 		soundProducerManager.SoundProducerAddedEvent += OnSoundProducerAdded;
 		soundProducerManager.SoundProducerRemovedEvent += OnSoundProducerRemoved;
+		foreach (ASoundProducer soundProducer in soundProducerManager.GetSoundProducers())
+		{
+			soundProducer.VolumeModifiedEvent += OnVolumeModified;
+		}
 	}
 
 	public virtual void OnStateExit()
 	{
-		SoundProducerManager soundProducerManager = Utils.GetSoundProducerManager(GameConstants.GAME_MANAGER_TAG);
 		if (soundProducerManager != null)
 		{
 			soundProducerManager.SoundProducerAddedEvent -= OnSoundProducerAdded;
@@ -50,7 +57,7 @@ public abstract class AEnemyState
 		soundProducer.VolumeModifiedEvent -= OnVolumeModified;
 	}
 
-	protected virtual void OnVolumeModified(float volume)
+	protected virtual void OnVolumeModified(ASoundProducer soundProducer)
 	{
 	}
 }
