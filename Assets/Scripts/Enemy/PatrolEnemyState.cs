@@ -14,14 +14,12 @@ public class PatrolEnemyState : AEnemyState
 
 	private PatrolEnemyStateData balanceData;
 	private Transform currentPatrolPointTarget;
-	private NavMeshAgent navMeshAgent;
 	private PatrolPointManager patrolPointManager;
 	private Coroutine waitAndChangeTargetCoroutine;
 
 	public PatrolEnemyState(EnemyBehaviour enemyBehaviour, PatrolEnemyStateData balanceData) : base(enemyBehaviour)
 	{
 		this.balanceData = balanceData;
-		navMeshAgent = enemyBehaviour.GetComponent<NavMeshAgent>();
 		patrolPointManager = Utils.GetPatrolPointManager(GameConstants.GAME_MANAGER_TAG);
 	}
 
@@ -33,6 +31,7 @@ public class PatrolEnemyState : AEnemyState
 
 	public override void OnStateExit()
 	{
+		base.OnStateExit();
 		StopWaitAndChangeTargetCoroutine();
 	}
 
@@ -62,8 +61,11 @@ public class PatrolEnemyState : AEnemyState
 	protected override void OnSoundProducerAdded(ASoundProducer soundProducer)
 	{
 		base.OnSoundProducerAdded(soundProducer);
-
 		float volume = soundProducer.GetVolume(cachedTransform.position);
+		if (volume > balanceData.triggerMinVolume)
+		{
+			enemyBehaviour.ChangeState(EnemyStates.ChaseSound);
+		}
 
 	}
 

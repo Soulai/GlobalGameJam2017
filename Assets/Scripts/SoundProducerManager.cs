@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class SoundProducerManager : MonoBehaviour
 {
@@ -13,6 +14,22 @@ public class SoundProducerManager : MonoBehaviour
 	{
 		soundProducers.Add(soundProducer);
 		SoundProducerAddedEvent.Fire(soundProducer);
+	}
+
+	public ASoundProducer FindSoundProducerMaxVolume(Vector3 fromPosition)
+	{
+		ASoundProducer maxVolumeSoundProducer = null;
+		float maxVolume = float.MinValue;
+		foreach (ASoundProducer soundProducer in soundProducers)
+		{
+			float volume = soundProducer.GetVolume(fromPosition);
+			if (volume > maxVolume)
+			{
+				maxVolume = volume;
+				maxVolumeSoundProducer = soundProducer;
+			}
+		}
+		return maxVolumeSoundProducer;
 	}
 
 	public IEnumerable<ASoundProducer> GetSoundProducers()
