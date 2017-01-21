@@ -7,6 +7,9 @@ namespace Player
         private Transform _transform;
         private Rigidbody _rigidbody;
         private Animator _animator;
+        private PlayerHealth _healthTracker;
+
+        private bool _isAlive;
 
         public bool PunchInProgress { private get; set; }
 
@@ -17,18 +20,21 @@ namespace Player
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody>();
             _animator = GetComponentInChildren<Animator>();
+            _healthTracker = GetComponent<PlayerHealth>();
+
+            _isAlive = true;
 
             PunchInProgress = false;
         }
 
         private void Update()
         {
-            HandleRotation();
-            HandleThrust();
-
-            if ((Input.GetButtonDown(AxisPrefix + "-Fire1")) && (!PunchInProgress))
+            if (_isAlive)
             {
-                Punch();
+                HandleRotation();
+                HandleThrust();
+                HandlePunching();
+                HandleDying();
             }
         }
 
@@ -63,13 +69,25 @@ namespace Player
             _rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
         }
 
-        private void Punch()
+        private void HandlePunching()
         {
-            PunchInProgress = true;
-            _animator.SetBool("Walking Forward", false);
-            _animator.SetBool("Running", false);
-            _animator.SetBool("Walking Backward", false);
-            _animator.SetTrigger("Attacking");
+            if ((Input.GetButtonDown(AxisPrefix + "-Fire1")) && (!PunchInProgress))
+            {
+                PunchInProgress = true;
+                _animator.SetBool("Walking Forward", false);
+                _animator.SetBool("Running", false);
+                _animator.SetBool("Walking Backward", false);
+                _animator.SetTrigger("Attacking");
+            }
+        }
+
+        private void HandleDying()
+        {
+            if ((_isAlive) && (_healthTracker.CurrentHealth <= 0))
+            {
+                _isAlive = false;
+                _animator.SetTrigger("HasDied");
+            }
         }
 
         private const float Rotation_Threshold = 0.25f;
