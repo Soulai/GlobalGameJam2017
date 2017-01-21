@@ -8,7 +8,7 @@ namespace DestroyableBox
 
         private void OnTriggerEnter(Collider collider)
         {
-            if (collider.tag == "Damage Collider")
+            if (collider.tag == "DamageCollider")
             {
                 HitsToDestroy -= 1;
                 if (HitsToDestroy < 1)
