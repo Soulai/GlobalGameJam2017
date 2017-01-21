@@ -5,9 +5,20 @@ namespace DestroyableBox
 {
     public class BoxHealth : MonoBehaviour
     {
-		public event Action<BoxHealth> BoxDestroyedEvent;
+        private Transform _solidModels;
+        private Transform _breakableModels;
+        private BoxCollider _collider;
+
+        public event Action<BoxHealth> BoxDestroyedEvent;
 
         public int HitsToDestroy;
+
+        private void Start()
+        {
+            _solidModels = transform.FindChild("Solid Models");
+            _breakableModels = transform.FindChild("Exploding Models");
+            _collider = GetComponent<BoxCollider>();
+        }
 
         private void OnTriggerEnter(Collider collider)
         {
@@ -23,13 +34,11 @@ namespace DestroyableBox
 
         private void HandleDestruction()
         {
-            // Just switch it off for now...
-			Renderer[] renderers = GetComponentsInChildren<Renderer>();
-			foreach (Renderer renderer in renderers)
-			{
-				renderer.enabled = false;
-			}
 			BoxDestroyedEvent.Fire(this);
+
+            _collider.enabled = false;
+            _solidModels.gameObject.SetActive(false);
+            _breakableModels.gameObject.SetActive(true);
         }
     }
 }
