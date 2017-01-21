@@ -13,7 +13,7 @@ public class PatrolEnemyState : AEnemyState
 	}
 
 	private PatrolEnemyStateData balanceData;
-	private Transform currentPatrolPointTarget;
+	private PatrolPoint currentPatrolPointTarget;
 	private PatrolPointManager patrolPointManager;
 	private Coroutine waitAndChangeTargetCoroutine;
 
@@ -21,6 +21,10 @@ public class PatrolEnemyState : AEnemyState
 	{
 		this.balanceData = balanceData;
 		patrolPointManager = Utils.GetPatrolPointManager(GameConstants.GAME_MANAGER_TAG);
+		if (balanceData.patrolPointGroup == null)
+		{
+			balanceData.patrolPointGroup = patrolPointManager.GetPatrolPointGroup(cachedTransform.position);
+		}
 	}
 
 	public override void OnStateEnter(EnemyStates previousState)
@@ -40,7 +44,7 @@ public class PatrolEnemyState : AEnemyState
 
 	public override void UpdateState()
 	{
-		Vector3 currentTarget = currentPatrolPointTarget.position;
+		Vector3 currentTarget = currentPatrolPointTarget.transform.position;
 		currentTarget.y = cachedTransform.position.y;
 		float distanceToTarget = (currentTarget - cachedTransform.position).magnitude;
 		if (distanceToTarget < 0.1f)
@@ -57,8 +61,8 @@ public class PatrolEnemyState : AEnemyState
 	private void MoveToRandomPatrolPoint()
 	{
 		StopWaitAndChangeTargetCoroutine();
-		currentPatrolPointTarget = patrolPointManager.GetRandomPatrolPoint(currentPatrolPointTarget);
-		navMeshAgent.SetDestination(currentPatrolPointTarget.position);
+		currentPatrolPointTarget = balanceData.patrolPointGroup.GetRandomPatrolPoint(currentPatrolPointTarget);
+		navMeshAgent.SetDestination(currentPatrolPointTarget.transform.position);
 	}
 
 	private void StopWaitAndChangeTargetCoroutine()
