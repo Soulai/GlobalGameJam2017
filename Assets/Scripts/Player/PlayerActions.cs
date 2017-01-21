@@ -4,9 +4,28 @@ namespace Player
 {
     public class PlayerActions : MonoBehaviour
     {
+		[SerializeField]
+		private float rotationThreshold = 0.25f;
+		[SerializeField]
+		private float maximumRotationSpeed = 2.0f;
+		[SerializeField]
+		private float movementThreshold = 0.1f;
+		[SerializeField]
+		private float maximumWalkingSpeed = 2.0f;
+		[SerializeField]
+		private float maximumRunningSpeed = 5.0f;
+
         private Transform _transform;
         private Rigidbody _rigidbody;
         private Animator _animator;
+
+		public float MaximumRunningSpeed
+		{
+			get
+			{
+				return maximumRunningSpeed;
+			}
+		}
 
         public bool PunchInProgress { private get; set; }
 
@@ -36,8 +55,8 @@ namespace Player
         {
             float stickValue = Input.GetAxis(AxisPrefix + "-Horizontal");
 
-            stickValue = Mathf.Abs(stickValue) > Rotation_Threshold ? stickValue : 0.0f;
-            float updatedY = _transform.eulerAngles.y + (stickValue * Maximum_Rotation_Speed);
+            stickValue = Mathf.Abs(stickValue) > rotationThreshold ? stickValue : 0.0f;
+            float updatedY = _transform.eulerAngles.y + (stickValue * maximumRotationSpeed);
 
             _transform.localRotation = Quaternion.Euler(_transform.eulerAngles.x, updatedY, _transform.eulerAngles.z);
         }
@@ -46,19 +65,19 @@ namespace Player
         {
             float stickValue = Input.GetAxis(AxisPrefix + "-Vertical");
 
-            if ((Mathf.Abs(stickValue) < Movement_Threshold) || (PunchInProgress))
+            if ((Mathf.Abs(stickValue) < movementThreshold) || (PunchInProgress))
             {
                 stickValue = 0.0f;
             }
 
-            float delta = Mathf.Clamp(stickValue * Maximum_Running_Speed, -Maximum_Walking_Speed, Maximum_Running_Speed);
+            float delta = Mathf.Clamp(stickValue * maximumRunningSpeed, -maximumWalkingSpeed, maximumRunningSpeed);
 
             Vector3 planarVector = new Vector3(_transform.forward.x, 0.0f, _transform.forward.z);
             Vector3 movementVector = planarVector.normalized * delta;
 
-            _animator.SetBool("Walking Forward", delta > Movement_Threshold);
-            _animator.SetBool("Running", delta > Maximum_Walking_Speed);
-            _animator.SetBool("Walking Backward", delta < -Movement_Threshold);
+            _animator.SetBool("Walking Forward", delta > movementThreshold);
+            _animator.SetBool("Running", delta > maximumWalkingSpeed);
+            _animator.SetBool("Walking Backward", delta < -movementThreshold);
 
             _rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
         }
@@ -71,11 +90,5 @@ namespace Player
             _animator.SetBool("Walking Backward", false);
             _animator.SetTrigger("Attacking");
         }
-
-        private const float Rotation_Threshold = 0.25f;
-        private const float Maximum_Rotation_Speed = 2.0f;
-        private const float Movement_Threshold = 0.1f;
-        private const float Maximum_Walking_Speed = 2.0f;
-        private const float Maximum_Running_Speed = 5.0f;
     }
 }
