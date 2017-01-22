@@ -18,8 +18,8 @@ public class PatrolPointGroup : MonoBehaviour
 		CalculateOrGetGroupBounds();
 		if (bounds != default(Bounds))
 		{
-			Gizmos.color = new Color(0f, 1f, 0f, 0.15f);
-			Gizmos.DrawCube(bounds.center + Vector3.up * 2f, bounds.size);
+			Gizmos.color = new Color(1f, 0f, 0f, 0.3f);
+			Gizmos.DrawCube(bounds.center + Vector3.up * 1f, bounds.size);
 		}
 	}
 

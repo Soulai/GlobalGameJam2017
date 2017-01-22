@@ -5,4 +5,5 @@
 	public static string PATROL_POINT_GROUP_TAG = "PatrolPointGroup";
 	public static string PLAYER_TAG = "Player";
 	public static string WALL_TAG = "Wall";
+	public static string DESTROYABLE_BOXES_LAYER = "DestroyableBoxes";
 }

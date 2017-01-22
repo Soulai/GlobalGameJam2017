@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class PatrolEnemyState : AEnemyState
 {
+	private const int AVERAGE_VELOCITY_MIN_COUNT = 15;
+
 	public override EnemyStates stateName
 	{
 		get
@@ -11,7 +15,7 @@ public class PatrolEnemyState : AEnemyState
 			return EnemyStates.Patrol;
 		}
 	}
-
+		
 	private PatrolEnemyStateData balanceData;
 	private PatrolPoint currentPatrolPointTarget;
 	private PatrolPointManager patrolPointManager;
@@ -44,6 +48,16 @@ public class PatrolEnemyState : AEnemyState
 
 	public override void UpdateState()
 	{
+		int layerMask = 1 << LayerMask.NameToLayer(GameConstants.DESTROYABLE_BOXES_LAYER);
+		Vector3 point1 = cachedTransform.position;
+		Vector3 point2 = new Vector3(cachedTransform.position.x, 
+			                 cachedTransform.position.y + navMeshAgent.height,
+			                 cachedTransform.position.z);
+		if (Physics.CapsuleCast(point1, point2, navMeshAgent.radius * 2f, cachedTransform.forward, 2f, layerMask))
+		{
+			MoveToRandomPatrolPoint();
+		}
+
 		Vector3 currentTarget = currentPatrolPointTarget.transform.position;
 		currentTarget.y = cachedTransform.position.y;
 		float distanceToTarget = (currentTarget - cachedTransform.position).magnitude;
