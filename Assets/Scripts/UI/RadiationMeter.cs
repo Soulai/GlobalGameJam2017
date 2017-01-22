@@ -9,20 +9,25 @@ namespace UI
 
         private Transform _transform;
         private PlayerHealth _playerHealth;
-        private float _zeroPointRotation;
+        private float _previousRadiation;
 
         private void Start()
         {
             _transform = transform;
             _playerHealth = LinkedAvatar.transform.GetComponentInChildren<PlayerHealth>();
-            _zeroPointRotation = _transform.rotation.z;
+            _previousRadiation = 0.0f;
         }
-
-        public float Rads;
 
         private void Update()
         {
-            Rads = _playerHealth.TotalRadiation;
+            _previousRadiation = Mathf.Clamp((_previousRadiation * 0.75f) + (_playerHealth.TotalRadiation * 0.25f), 0.0f, Maximum_Radiation);
+            float angle = Zero_Rotation - (Rotation_Range * _previousRadiation / Maximum_Radiation);
+
+            _transform.localRotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, angle);
         }
+
+        private const float Zero_Rotation = 28.0f;
+        private const float Rotation_Range = 58.0f;
+        private const float Maximum_Radiation = 50.0f;
     }
 }
