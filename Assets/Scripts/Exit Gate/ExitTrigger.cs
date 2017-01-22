@@ -5,12 +5,14 @@ namespace ExitGate
     public class ExitTrigger : MonoBehaviour
     {
         private Animator _animator;
+        private GameObject _flash;
 
         private int _playersInProximity;
 
         private void Start()
         {
             _animator = GetComponent<Animator>();
+            _flash = transform.FindChild("Flash Container").gameObject;
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -36,6 +38,8 @@ namespace ExitGate
         private void TriggerLevelClearedSequence()
         {
             _animator.SetTrigger("Open");
+            _flash.SetActive(true);
+            
 
             // TODO: Fire an event that ends the round
         }
