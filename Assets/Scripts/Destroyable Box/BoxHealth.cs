@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.AI;
 
 namespace DestroyableBox
 {
@@ -37,6 +38,7 @@ namespace DestroyableBox
 			BoxDestroyedEvent.Fire(this);
 
             _collider.enabled = false;
+			GetComponent<NavMeshObstacle>().enabled = false;
             _solidModel.gameObject.SetActive(false);
             _breakableModel.gameObject.SetActive(true);
         }

@@ -82,17 +82,17 @@ namespace Player
             {
                 stickValue = 0.0f;
             }
-
-            float delta = Mathf.Clamp(stickValue * maximumRunningSpeed, -maximumWalkingSpeed, maximumRunningSpeed);
+				
+			float delta = Mathf.Clamp(stickValue * maximumRunningSpeed, -maximumWalkingSpeed, maximumRunningSpeed);
 
             Vector3 planarVector = new Vector3(_transform.forward.x, 0.0f, _transform.forward.z);
-            Vector3 movementVector = planarVector.normalized * delta;
+			Vector3 movementVector = planarVector.normalized * delta  * Time.fixedDeltaTime;
 
             _animator.SetBool("Walking Forward", delta > movementThreshold);
             _animator.SetBool("Running", delta > maximumWalkingSpeed);
             _animator.SetBool("Walking Backward", delta < -movementThreshold);
 
-			_rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z) * Time.fixedDeltaTime;
+			_rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
         }
 
         private void HandlePunching()

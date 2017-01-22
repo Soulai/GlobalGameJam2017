@@ -20,7 +20,7 @@ public class AvatarMovementSoundProducer : ASoundProducer
 
 	void Update()
 	{
-		float newVolume = soundVolumeCurve.Evaluate(cachedRigidbody.velocity.magnitude / playerActions.MaximumRunningSpeed);
+		float newVolume = soundVolumeCurve.Evaluate(cachedRigidbody.velocity.magnitude / (playerActions.MaximumRunningSpeed * Time.deltaTime));
 		newVolume *= maxSoundVolume;
 		SourceVolume = newVolume;
 	}
