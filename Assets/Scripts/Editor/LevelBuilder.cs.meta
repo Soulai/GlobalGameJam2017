@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4524faaefb4f536488f622f7744068e0
+timeCreated: 1485041027
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - levelBuilderDataPrefab: {fileID: 1768067167462048, guid: 7a42867d082933c4ea78e664e8e0d7c7,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
