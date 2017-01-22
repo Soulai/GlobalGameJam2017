@@ -58,6 +58,8 @@ namespace ExitGate
             {
                 enemy.enabled = false;
             }
+
+            Sound.SoundEffectPlayer.PlayPositionedSound("choir", transform.position);
         }
     }
 }

@@ -29,6 +29,11 @@ namespace DestroyableBox
                 if (HitsToDestroy < 1)
                 {
                     HandleDestruction();
+                    Sound.SoundEffectPlayer.PlayPositionedSound("break-box", transform.position);
+                }
+                else
+                {
+                    Sound.SoundEffectPlayer.PlayPositionedSound("hit-box", transform.position);
                 }
             }
         }
