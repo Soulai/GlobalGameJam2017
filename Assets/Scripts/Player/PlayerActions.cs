@@ -51,20 +51,27 @@ namespace Player
             if (_isAlive)
             {
                 HandleRotation();
-                HandleThrust();
                 HandlePunching();
                 HandleDying();
             }
         }
+
+		private void LateUpdate()
+		{
+			if (_isAlive)
+			{
+				HandleThrust();
+			}
+		}
 
         private void HandleRotation()
         {
             float stickValue = Input.GetAxis(AxisPrefix + "-Horizontal");
 
             stickValue = Mathf.Abs(stickValue) > rotationThreshold ? stickValue : 0.0f;
-            float updatedY = _transform.eulerAngles.y + (stickValue * maximumRotationSpeed);
+			float updatedY = _transform.eulerAngles.y + (stickValue * maximumRotationSpeed * Time.deltaTime);
 
-            _transform.localRotation = Quaternion.Euler(_transform.eulerAngles.x, updatedY, _transform.eulerAngles.z);
+			_transform.localRotation = Quaternion.Euler(_transform.eulerAngles.x, updatedY, _transform.eulerAngles.z);
         }
 
         private void HandleThrust()
@@ -85,7 +92,7 @@ namespace Player
             _animator.SetBool("Running", delta > maximumWalkingSpeed);
             _animator.SetBool("Walking Backward", delta < -movementThreshold);
 
-            _rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z);
+			_rigidbody.velocity = new Vector3(movementVector.x, _rigidbody.velocity.y, movementVector.z) * Time.fixedDeltaTime;
         }
 
         private void HandlePunching()
