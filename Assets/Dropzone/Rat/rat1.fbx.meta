@@ -1,0 +1,3040 @@
+fileFormatVersion: 2
+guid: 37b7698c6e0bf7c42aca4d662aa49e2e
+timeCreated: 1485040891
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Backbone
+    100004: Backbone.001
+    100006: Backbone.002
+    100008: Backbone.003
+    100010: Backbone.003_end
+    100012: BackLeg_L
+    100014: BackLeg_L.001
+    100016: BackLeg_L.002
+    100018: BackLeg_L.003
+    100020: BackLeg_L.003_end
+    100022: BackLeg_R
+    100024: BackLeg_R.001
+    100026: BackLeg_R.002
+    100028: BackLeg_R.003
+    100030: BackLeg_R.003_end
+    100032: Body
+    100034: Eyes
+    100036: FrontLeg_L
+    100038: FrontLeg_L.001
+    100040: FrontLeg_L.002
+    100042: FrontLeg_L.003
+    100044: FrontLeg_L.003_end
+    100046: FrontLeg_R
+    100048: FrontLeg_R.001
+    100050: FrontLeg_R.002
+    100052: FrontLeg_R.003
+    100054: FrontLeg_R.003_end
+    100056: Hair
+    100058: Head
+    100060: Head 1
+    100062: Hip
+    100064: IK-Backbone
+    100066: IK-Backbone_end
+    100068: IK-BackLeg_L
+    100070: IK-BackLeg_L_end
+    100072: IK-BackLeg_R
+    100074: IK-BackLeg_R_end
+    100076: IK-BackLegT_L
+    100078: IK-BackLegT_L_end
+    100080: IK-BackLegT_R
+    100082: IK-BackLegT_R_end
+    100084: IK-FrontLeg_L
+    100086: IK-FrontLeg_L_end
+    100088: IK-FrontLeg_R
+    100090: IK-FrontLeg_R_end
+    100092: IK-FrontLegT_L
+    100094: IK-FrontLegT_L_end
+    100096: IK-FrontLegT_R
+    100098: IK-FrontLegT_R_end
+    100100: IK-Head
+    100102: IK-Head_end
+    100104: IK-Hip
+    100106: IK-Hip_end
+    100108: IK-Tail
+    100110: IK-Tail_end
+    100112: Main
+    100114: //RootNode
+    100116: Tail
+    100118: Tail.001
+    100120: Tail.002
+    100122: Tail.003
+    100124: Tail.003_end
+    100126: Teeth
+    400000: Armature
+    400002: Backbone
+    400004: Backbone.001
+    400006: Backbone.002
+    400008: Backbone.003
+    400010: Backbone.003_end
+    400012: BackLeg_L
+    400014: BackLeg_L.001
+    400016: BackLeg_L.002
+    400018: BackLeg_L.003
+    400020: BackLeg_L.003_end
+    400022: BackLeg_R
+    400024: BackLeg_R.001
+    400026: BackLeg_R.002
+    400028: BackLeg_R.003
+    400030: BackLeg_R.003_end
+    400032: Body
+    400034: Eyes
+    400036: FrontLeg_L
+    400038: FrontLeg_L.001
+    400040: FrontLeg_L.002
+    400042: FrontLeg_L.003
+    400044: FrontLeg_L.003_end
+    400046: FrontLeg_R
+    400048: FrontLeg_R.001
+    400050: FrontLeg_R.002
+    400052: FrontLeg_R.003
+    400054: FrontLeg_R.003_end
+    400056: Hair
+    400058: Head
+    400060: Head 1
+    400062: Hip
+    400064: IK-Backbone
+    400066: IK-Backbone_end
+    400068: IK-BackLeg_L
+    400070: IK-BackLeg_L_end
+    400072: IK-BackLeg_R
+    400074: IK-BackLeg_R_end
+    400076: IK-BackLegT_L
+    400078: IK-BackLegT_L_end
+    400080: IK-BackLegT_R
+    400082: IK-BackLegT_R_end
+    400084: IK-FrontLeg_L
+    400086: IK-FrontLeg_L_end
+    400088: IK-FrontLeg_R
+    400090: IK-FrontLeg_R_end
+    400092: IK-FrontLegT_L
+    400094: IK-FrontLegT_L_end
+    400096: IK-FrontLegT_R
+    400098: IK-FrontLegT_R_end
+    400100: IK-Head
+    400102: IK-Head_end
+    400104: IK-Hip
+    400106: IK-Hip_end
+    400108: IK-Tail
+    400110: IK-Tail_end
+    400112: Main
+    400114: //RootNode
+    400116: Tail
+    400118: Tail.001
+    400120: Tail.002
+    400122: Tail.003
+    400124: Tail.003_end
+    400126: Teeth
+    4300000: Teeth
+    4300002: Hair
+    4300004: Eyes
+    4300006: Head
+    4300008: Body
+    7400000: Armature|Attack.000
+    7400002: Armature|Attack.001
+    7400004: Armature|Attack.002
+    7400006: Armature|Attack.003
+    7400008: Armature|Attack.Begin
+    7400010: Armature|Attack.End
+    7400012: Armature|Die
+    7400014: Armature|Hit
+    7400016: Armature|Idle.000
+    7400018: Armature|Idle.001
+    7400020: Armature|Idle.002
+    7400022: Run
+    7400024: Armature|Stand
+    7400026: Walk
+    7400028: Teeth|Idle.000
+    7400030: Eyes|Stand
+    7400032: Head|Stand
+    7400034: Body|Idle.000
+    9500000: //RootNode
+    13700000: Body
+    13700002: Eyes
+    13700004: Hair
+    13700006: Head
+    13700008: Teeth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Attack.000
+      takeName: Armature|Attack.000
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Attack.001
+      takeName: Armature|Attack.001
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Attack.002
+      takeName: Armature|Attack.002
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Attack.003
+      takeName: Armature|Attack.003
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Attack.Begin
+      takeName: Armature|Attack.Begin
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Attack.End
+      takeName: Armature|Attack.End
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Die
+      takeName: Armature|Die
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Hit
+      takeName: Armature|Hit
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle.000
+      takeName: Armature|Idle.000
+      firstFrame: 0
+      lastFrame: 1553
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle.001
+      takeName: Armature|Idle.001
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle.002
+      takeName: Armature|Idle.002
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Armature|Run
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Stand
+      takeName: Armature|Stand
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Armature|Walk
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Teeth|Idle.000
+      takeName: Teeth|Idle.000
+      firstFrame: 0
+      lastFrame: 1553
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eyes|Stand
+      takeName: Eyes|Stand
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Head|Stand
+      takeName: Head|Stand
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Body|Idle.000
+      takeName: Body|Idle.000
+      firstFrame: 0
+      lastFrame: 1553
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK-FrontLeg_L
+        weight: 1
+      - path: Armature/IK-FrontLeg_L/IK-FrontLeg_L_end
+        weight: 1
+      - path: Armature/IK-FrontLeg_R
+        weight: 1
+      - path: Armature/IK-FrontLeg_R/IK-FrontLeg_R_end
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Hip
+        weight: 1
+      - path: Armature/Main/Hip/Backbone
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/Backbone.002/Head 1/Backbone.003/Backbone.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_L/FrontLeg_L.001/FrontLeg_L.002/FrontLeg_L.003/FrontLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/Backbone/Backbone.001/FrontLeg_R/FrontLeg_R.001/FrontLeg_R.002/FrontLeg_R.003/FrontLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_L/BackLeg_L.001/BackLeg_L.002/BackLeg_L.003/BackLeg_L.003_end
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003
+        weight: 1
+      - path: Armature/Main/Hip/BackLeg_R/BackLeg_R.001/BackLeg_R.002/BackLeg_R.003/BackLeg_R.003_end
+        weight: 1
+      - path: Armature/Main/Hip/Tail
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003
+        weight: 1
+      - path: Armature/Main/Hip/Tail/Tail.001/Tail.002/Tail.003/Tail.003_end
+        weight: 1
+      - path: Armature/Main/IK-Backbone
+        weight: 1
+      - path: Armature/Main/IK-Backbone/IK-Backbone_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_L/IK-BackLeg_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R
+        weight: 1
+      - path: Armature/Main/IK-BackLeg_R/IK-BackLeg_R_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_L/IK-BackLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R
+        weight: 1
+      - path: Armature/Main/IK-BackLegT_R/IK-BackLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_L/IK-FrontLegT_L_end
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R
+        weight: 1
+      - path: Armature/Main/IK-FrontLegT_R/IK-FrontLegT_R_end
+        weight: 1
+      - path: Armature/Main/IK-Head
+        weight: 1
+      - path: Armature/Main/IK-Head/IK-Head_end
+        weight: 1
+      - path: Armature/Main/IK-Hip
+        weight: 1
+      - path: Armature/Main/IK-Hip/IK-Hip_end
+        weight: 1
+      - path: Armature/Main/IK-Tail
+        weight: 1
+      - path: Armature/Main/IK-Tail/IK-Tail_end
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Teeth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
