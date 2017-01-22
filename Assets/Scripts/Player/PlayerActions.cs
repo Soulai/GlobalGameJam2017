@@ -22,6 +22,7 @@ namespace Player
 
         private EnemyBehaviour[] _enemyBehaviourControllers;
         private GameObject[] _players;
+        private UI.RadiationMeter[] _radiationMeters;
 
         public GameObject GameOverSequencer;
 
@@ -50,6 +51,7 @@ namespace Player
 
             _enemyBehaviourControllers = FindObjectsOfType<EnemyBehaviour>();
             _players = GameObject.FindGameObjectsWithTag("Player");
+            _radiationMeters = FindObjectsOfType<UI.RadiationMeter>();
 
             PunchInProgress = false;
         }
@@ -141,6 +143,13 @@ namespace Player
             {
                 enemy.enabled = false;
             }
+
+            foreach (UI.RadiationMeter meter in _radiationMeters)
+            {
+                meter.enabled = false;
+            }
+
+            Sound.SoundEffectPlayer.PlayPositionedSound("death-groan", _transform.position);
 
             GameOverSequencer.SetActive(true);
         }

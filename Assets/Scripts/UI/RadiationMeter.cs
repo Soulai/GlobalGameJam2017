@@ -27,7 +27,8 @@ namespace UI
 
             _transform.localRotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, angle);
 
-            if (Random.Range(0.0f, Sound_Random_Chance) < ((_previousRadiation / Maximum_Radiation) * 100.0f))
+            if ((Random.Range(0.0f, Sound_Random_Chance) < ((_previousRadiation / Maximum_Radiation) * 100.0f)) &&
+                (_playerHealth.CurrentHealth > 0.0f))
             {
                 Sound.SoundEffectPlayer.PlayPositionedSound("counter-" + Random.Range(1, 4), _playerTransform.position, Random.Range(0.95f, 1.05f));
             }
