@@ -7,6 +7,7 @@ namespace Player
     public class PlayerHealth : MonoBehaviour
     {
         public float CurrentHealth;
+        public float TotalRadiation;
 
         private Transform _transform;
         private List<RadiationHotspot> _nearbyRadiationGenerators;
@@ -22,29 +23,25 @@ namespace Player
 
         private void Update()
         {
-            if (CurrentHealth > 0.0f)
-            {
-                ApplyDamageFromBackgroundRadiation();
-                ApplyDamageFromNearbyRadiationGenerators();
+            float generatedRadiation = GetRadiationFromNearbyGenerators();
 
-                CurrentHealth = Mathf.Max(CurrentHealth, 0.0f);
-            }
+            TotalRadiation = _backgroundRadiationGenerator.BackgroundRadiationLevel + generatedRadiation;
+            CurrentHealth = Mathf.Max(CurrentHealth - TotalRadiation, 0.0f);
         }
 
-        private void ApplyDamageFromBackgroundRadiation()
+        private float GetRadiationFromNearbyGenerators()
         {
-            //CurrentHealth -= _backgroundRadiationGenerator.BackgroundRadiationLevel;
-        }
+            float radiation = 0.0f;
 
-        private void ApplyDamageFromNearbyRadiationGenerators()
-        {
             if (_nearbyRadiationGenerators.Count > 0)
             {
                 for (int i=0; i<_nearbyRadiationGenerators.Count; i++)
                 {
-                    CurrentHealth -= _nearbyRadiationGenerators[i].GetDamageFromTargetPosition(_transform.position);
+                    radiation += _nearbyRadiationGenerators[i].GetDamageFromTargetPosition(_transform.position);
                 }
             }
+
+            return radiation;
         }
 
         private void OnTriggerEnter(Collider collider)

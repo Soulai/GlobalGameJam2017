@@ -5,8 +5,8 @@ namespace DestroyableBox
 {
     public class BoxHealth : MonoBehaviour
     {
-        private Transform _solidModels;
-        private Transform _breakableModels;
+        private Transform _solidModel;
+        private Transform _breakableModel;
         private BoxCollider _collider;
 
         public event Action<BoxHealth> BoxDestroyedEvent;
@@ -15,8 +15,8 @@ namespace DestroyableBox
 
         private void Start()
         {
-            _solidModels = transform.FindChild("Solid Models");
-            _breakableModels = transform.FindChild("Exploding Models");
+            _solidModel = transform.FindChild("Solid Box");
+            _breakableModel = transform.FindChild("Breakable Box");
             _collider = GetComponent<BoxCollider>();
         }
 
@@ -37,8 +37,8 @@ namespace DestroyableBox
 			BoxDestroyedEvent.Fire(this);
 
             _collider.enabled = false;
-            _solidModels.gameObject.SetActive(false);
-            _breakableModels.gameObject.SetActive(true);
+            _solidModel.gameObject.SetActive(false);
+            _breakableModel.gameObject.SetActive(true);
         }
     }
 }
