@@ -20,6 +20,11 @@ namespace Player
         private Animator _animator;
         private PlayerHealth _healthTracker;
 
+        private EnemyBehaviour[] _enemyBehaviourControllers;
+        private GameObject[] _players;
+
+        public GameObject GameOverSequencer;
+
         private bool _isAlive;
 
 		public float MaximumRunningSpeed
@@ -42,6 +47,9 @@ namespace Player
             _healthTracker = GetComponent<PlayerHealth>();
 
             _isAlive = true;
+
+            _enemyBehaviourControllers = FindObjectsOfType<EnemyBehaviour>();
+            _players = GameObject.FindGameObjectsWithTag("Player");
 
             PunchInProgress = false;
         }
@@ -100,9 +108,8 @@ namespace Player
             if ((Input.GetButtonDown(AxisPrefix + "-Fire1")) && (!PunchInProgress))
             {
                 PunchInProgress = true;
-                _animator.SetBool("Walking Forward", false);
-                _animator.SetBool("Running", false);
-                _animator.SetBool("Walking Backward", false);
+                Reset();
+
                 _animator.SetTrigger("Attacking");
             }
         }
@@ -111,9 +118,39 @@ namespace Player
         {
             if ((_isAlive) && (_healthTracker.CurrentHealth <= 0))
             {
-                _isAlive = false;
-                _animator.SetTrigger("HasDied");
+                StartDeathSequence();
             }
+        }
+
+        private void StartDeathSequence()
+        {
+            _isAlive = false;
+            _animator.SetTrigger("HasDied");
+
+            foreach (GameObject player in _players)
+            {
+                if (player != _transform.gameObject)
+                {
+                    player.GetComponent<PlayerActions>().Reset();
+                    player.GetComponent<PlayerActions>().enabled = false;
+                    player.GetComponent<PlayerHealth>().enabled = false;
+                }
+            }
+
+            foreach (EnemyBehaviour enemy in _enemyBehaviourControllers)
+            {
+                enemy.enabled = false;
+            }
+
+            GameOverSequencer.SetActive(true);
+        }
+
+        public void Reset()
+        {
+            _rigidbody.velocity = new Vector3(0.0f, _rigidbody.velocity.y, 0.0f);
+            _animator.SetBool("Walking Forward", false);
+            _animator.SetBool("Running", false);
+            _animator.SetBool("Walking Backward", false);
         }
     }
 }

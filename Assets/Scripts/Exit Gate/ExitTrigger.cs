@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Player;
 
 namespace ExitGate
 {
@@ -6,6 +7,8 @@ namespace ExitGate
     {
         private Animator _animator;
         private GameObject _flash;
+        private EnemyBehaviour[] _enemyBehaviourControllers;
+        private GameObject[] _players;
 
         private int _playersInProximity;
 
@@ -13,6 +16,9 @@ namespace ExitGate
         {
             _animator = GetComponent<Animator>();
             _flash = transform.FindChild("Flash Container").gameObject;
+
+            _enemyBehaviourControllers = FindObjectsOfType<EnemyBehaviour>();
+            _players = GameObject.FindGameObjectsWithTag("Player");
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -40,8 +46,18 @@ namespace ExitGate
             _animator.SetTrigger("Open");
             _flash.SetActive(true);
             
+            foreach(GameObject player in _players)
+            {
+                player.transform.LookAt(new Vector3(transform.position.x, player.transform.position.y, transform.position.z));
+                player.GetComponent<PlayerActions>().Reset();
+                player.GetComponent<PlayerActions>().enabled = false;
+                player.GetComponent<PlayerHealth>().enabled = false;
+            }
 
-            // TODO: Fire an event that ends the round
+            foreach(EnemyBehaviour enemy in _enemyBehaviourControllers)
+            {
+                enemy.enabled = false;
+            }
         }
     }
 }
