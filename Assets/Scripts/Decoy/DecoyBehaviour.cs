@@ -15,6 +15,8 @@ public class DecoyBehaviour : ASoundProducer
 	private float soundMaxVolume = 3000f;
 	[SerializeField]
 	private AnimationCurve soundCurve;
+	[SerializeField]
+	private Transform modelTransform;
 
 	private CharacterController characterController;
 	private float currentSpeed;
@@ -72,6 +74,7 @@ public class DecoyBehaviour : ASoundProducer
 			float rotationAngle = Random.Range(-80f, 80f);
 			Vector3 target = Vector3.Cross(Vector3.up, hit.normal);
 			Vector3 newDirection = Vector3.RotateTowards(hit.normal, target, Mathf.Deg2Rad * rotationAngle, 0f);
+			modelTransform.rotation = Quaternion.LookRotation(newDirection, Vector3.up);
 			moveTowardsDirectionCoroutine = StartCoroutine(MoveTowardsDirection(newDirection));
 		}
 	}
@@ -98,6 +101,7 @@ public class DecoyBehaviour : ASoundProducer
 			if (Input.GetButtonDown(playerActions.AxisPrefix + "-Fire2"))
 			{
 				Vector3 moveDirection = cachedTransform.position - playerActions.transform.position;
+				modelTransform.rotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 				moveDirection.y = 0f;
 				moveDirection.Normalize();
 				moveTowardsDirectionCoroutine = StartCoroutine(MoveTowardsDirection(moveDirection));
