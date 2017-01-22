@@ -16,8 +16,8 @@ namespace DestroyableBox
 
         private void Start()
         {
-            _solidModel = transform.FindChild("Solid Box");
-            _breakableModel = transform.FindChild("Breakable Box");
+            _solidModel = transform.FindChild("Solid");
+            _breakableModel = transform.FindChild("Breakable");
             _collider = GetComponent<BoxCollider>();
         }
 
